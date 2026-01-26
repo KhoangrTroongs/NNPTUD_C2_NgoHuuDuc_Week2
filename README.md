@@ -1,1 +1,3 @@
-# NNPTUD_C2_NgoHuuDuc_Week2
+# Họ và tên: Ngô Hữu Đức
+
+# Mã số SV: 2280600725
