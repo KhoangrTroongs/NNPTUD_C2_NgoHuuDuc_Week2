@@ -1,1 +1,75 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <H1>
+        POST MANAGEMENT
+    </H1>
+    <br>
+    <H2>
+        LIST POST
+    </H2>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Post</th>
+                    <th>Views</th>
+                </tr>
+            </thead>
+            <tbody id = "table-body"></tbody>
+        </table>
+    </div>
+    <br>
+    <H2>
+        LIST DELETE POST
+    </H2>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Post</th>
+                    <th>Views</th>
+                </tr>
+            </thead>
+            <tbody id = "table-body-delete"></tbody>
+        </table>
+    </div>
+    <br>
+    <div>
+        <h3>Add / Edit</h3>
+        <input type="text" id ="id_txt" placeholder="ID"> 
+        <input type="text" id ="title_txt" placeholder="Posts"> 
+        <input type="text" id ="views_txt" placeholder="Views"> 
+        <input type="submit" value="Save" onclick="CreateAPost()">
+    </div>
+    <div>
+        <h3>Detele</h3>
+        <input type="text" id ="id_delete" placeholder="Nhập mã để xoá">
+        <input type="submit" value="Delete" onclick="DeleteAPost()">
+    </div>
+    
+<h1>COMMENT MANAGEMENT</h1>
+<input type="hidden" id="comment_id_txt" placeholder="ID Comment">
+<textarea id="comment_text_txt" placeholder="Comment"></textarea>
+<button onclick="SaveComment()">Lưu Comment</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Comment</th>
+            <th>Post Id</th>
+        </tr>
+    </thead>
+    <tbody id="table-body-comments"></tbody>
+</table>
+</body>
+</html>
